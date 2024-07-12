@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="data:image/png;base64,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">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Abril Fatface", serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- banner -->
+    <div class="banner">
+        <div class="head">
+        <img class="head2"  width="1900px"  height="800px" src="https://cdn.pixabay.com/photo/2021/02/13/14/51/music-6011755_1280.jpg">
+        </div>
+        <!-- nav -->
+
+        <div style="position: absolute; top: 150px; margin-left: 40px;" class="title">
+            <p style="color: white; font-size: 15px; font-weight: bolder;">THINKING OF BUYING A HEADPHONE?</p>
+            <P class="wel" style="text-shadow: 1px 1px 2px white; color: white;  font-weight: bolder; font-size: 72px;">Welcome to our <br>Headphones Shop</P>
+            <button style="background-color: white;border-radius: 25px; border: 1px solid white; padding: 10px;  color: black;">Shopping Now</button>
+        </div>
+
+        <div class="nav">
+            <nav class="navbar text-center  fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+            
+                      </button>
+        
+                   <div style="background-color: white;" class=" collapse navbar-collapse" id="navbarSupportedContent">
+        
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Watch Video</a>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Blocks</a>
+                    
+                        
+                        <ul style="background-color: rgb(241, 152, 152);" class=" dropdown-menu  border border-0">
+                            <li><a class="dropdown-item text-center " href="#">Menu pages</a></li>
+                            <li><a class="dropdown-item text-center " href="#">Headers</a></li>
+                            <li><a class="dropdown-item text-center " href="#">Images&Videos</a></li>
+                            <li><a class="dropdown-item text-center " href="#">Shops</a></li>
+                            <li><a class="dropdown-item text-center " href="#">Features</a></li>
+                            <li><a class="dropdown-item text-center " href="#">info</a></li>
+                            <li><a class="dropdown-item text-center " href="#">TERMS&TESIMONIALS</a></li>
+                            <li><a class="dropdown-item text-center " href="#">FORMS&MAPS</a></li>
+                            <li><a class="dropdown-item text-center " href="#">PRICING TABLES</a></li>
+                            <li><a class="dropdown-item text-center " href="#">Tables</a></li>
+                            <li><a class="dropdown-item text-center " href="#">social</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Demo
+                            </a>
+        
+                            <ul style="background-color: rgb(241, 152, 152);" class="dropdown-menu  border border-0">
+        
+                                <li> <a href="#"  class="dropdown-item text-center">Headphone Shop</a></li>
+                                <li><a href="#"  class="dropdown-item text-center">Shoe Shop</a></li>
+                                <li><a href="#"  class="dropdown-item text-center">Cafe</a></li>
+                            </ul>
+        
+                        </li>
+                        <li>
+                          <section class="text-center">
+                            <!-- Grid container -->
+                            <div class="container p-4 pb-0">
+                              <!-- Section: Social media -->
+                              <section class="mb-4">
+        
+                                <a style="background-color: rgb(212, 148, 148);"
+                                data-mdb-ripple-init
+                                  class="btn text-light btn-light m-1  rounded-circle"
+                                  id="icon"
+                                 
+                                  href="#!"
+                                  role="button"
+                                  ><i class="fab fa-twitter"></i
+                                ></a>
+        
+                                <a style="background-color: rgb(212, 148, 148);"
+                                data-mdb-ripple-init
+                                  class="btn text-light btn-light m-1  rounded-circle"
+            
+                                  href="#!"
+                                  role="button"
+                                  ><i class="fab fa-facebook-f"></i
+                                ></a>
+        
+                                <a style="background-color: rgb(212, 148, 148);"
+                                data-mdb-ripple-init
+                                  class="btn text-light btn-light m-1  rounded-circle"
+        
+                                  href="#!"
+                                  role="button"
+                                  ><i class="fab fa-instagram"></i
+                                ></a>
+                                
+                                </section>
+                              </section>
+                            
+                        </li>
+        
+                        <li>
+                            <button type="button" class="btn btn-light rounded-pill">Buy Now</button><br><br>
+                        </li>
+                    </ul>
+                
+                </div>
+             </nav>
+        </div>
+          
+    </div>
+
+    <!-- content -->
+     <div style="height: 12 0px; margin: 70px;" class=" row">
+        <h2>Find a quality and right headphones not easy</h2>
+        <p style="font-size: 18 px; text-align: justify; margin-top: 25px; margin-left: 50px;"><span style="font-weight: bolder;">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Autem nobis, dolor voluptatibus nihil provident commodi error, braliquid deserunt, quidem sit esse. Illo similique <br> minus excepturi fugit, voluptas dignissimos aut rem?
+        Repudiandae est vero veniam inventore? Minus quod voluptates dicta cum repudiandae modi distinctio harum aliquam dolores <br> amet iure soluta quis ipsa vel consectetur consequuntur commodi, veritatis incidunt vitae accusamus ex!</p>
+     </div>
+
+     <div style=" background-color: rgb(241, 152, 152);" class="row">
+        <p style="margin: 25px; font-weight: bolder; color: white; font-size: 30px; text-align: center;">We will help you to choose the best headphones!</p>
+     </div>
+
+     <!-- items -->
+      <div style="margin: 70px;" class="item">
+        <h2 style="letter-spacing: 7px; text-shadow: 1px 1px 3px ; margin-left: 70px;">Hottest Headphone of the month</h2>
+        <div style="margin-top: 50px; margin-left: 90px; width: 1200px;" class="  card-group">
+            <div style=" border: 1px solid white;" class="m-2 card">
+              <img class="img" style="" height="300px" src="https://i.pinimg.com/236x/e6/00/62/e60062f28200f7f38d4db3891f047878.jpg" class="card-img-top" alt="...">
+              <div style="background-color: rgb(241, 152, 152);"  class=" card-body">
+                <h5 style="color: white; font-weight: bolder; font-size: 20px;" class="card-title">HEADPHONES</h5>
+                <button style="padding: 5px; position: absolute; top: 10px; border: 1px solid rgb(241, 152, 152); border-radius: 20px; background-color: rgb(241, 152, 152); color: white;">HEADPHONES</button>
+                <p style="margin: 4px; color: white;" class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint enim facilis rerum rem alias deserunt nesciunt nisi </p>
+              </div>
+              
+            </div>
+            <div style="border: 1px solid white;" class="m-2 card">
+              <img class="img" height="300px" src="https://i.pinimg.com/564x/ed/28/e8/ed28e8ed56bf44c72012f13b51ee7133.jpg" class="card-img-top" alt="...">
+              <div style="background-color: rgb(241, 152, 152);" class=" card-body">
+                <h5 style=" color: white; font-weight: bolder; font-size: 20px;" class="card-title">HEADPHONES</h5>
+                <p style="margin: 4px; color: white;" class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint enim facilis rerum rem alias deserunt nesciunt nisi </p>
+                <button style="padding: 5px; position: absolute; top: 10px; border: 1px solid rgb(241, 152, 152); border-radius: 20px; background-color: rgb(241, 152, 152); color: white;">HEADPHONES</button>
+            </div>
+              
+            </div>
+            <div style="border: 1px solid white;" class="m-2 card">
+              <img class="img" height="300px" src="https://i.pinimg.com/474x/13/8a/da/138ada32676bf67ec36e31772d3e6219.jpg" class="card-img-top" alt="...">
+              <div style="background-color: rgb(241, 152, 152);" class="card-body">
+                <h5 style="color: white; font-weight: bolder; font-size: 20px;" class="card-title">HEADPHONES</h5>
+                <p style="margin: 4px; color: white;" class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint enim facilis rerum rem alias deserunt nesciunt nisi </p>
+                <button style="padding: 5px; position: absolute; top: 10px; border: 1px solid rgb(241, 152, 152); border-radius: 20px; background-color: rgb(241, 152, 152); color: white;">HEADPHONES</button>
+            </div>
+              
+            </div>
+          </div>
+      </div>
+
+
+      <!-- images -->
+       <div style="margin-left: 70px; margin-top: 130px;"  class="row1">
+             <p style= "letter-spacing: 7px; text-shadow: 1px 1px 3px ; margin: 50px;  font-size: 30px;">Meet Our New Headphones</p>
+        <div style=" margin-top: 90px; width: 1200px; margin-left: 40px;" class="row">
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://i.pinimg.com/736x/cb/a7/f8/cba7f8615f2d7d094fab5dd13c6298ca.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://i.pinimg.com/236x/5b/91/db/5b91db44efe257a4b91f46145d523eab.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://target.scene7.com/is/image/Target/GUEST_3f6536da-95f7-45ea-a24d-2b8c3a082e73" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://happyplugs.com/cdn/shop/products/HappyPlugsPlayPinkGold1_2d9424d7-36ca-4ffd-8597-25cb1a06bfc9_800x.jpg?v=1660797812" alt="">
+            </div>
+        </div>
+        <div style="margin-top: 100px; width: 1200px; margin-left: 60px;" class="row">
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://happyplugs.com/cdn/shop/products/HappyPlugsPlayPinkGold1_2d9424d7-36ca-4ffd-8597-25cb1a06bfc9_800x.jpg?v=1660797812" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://target.scene7.com/is/image/Target/GUEST_3f6536da-95f7-45ea-a24d-2b8c3a082e73" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://i.pinimg.com/736x/cb/a7/f8/cba7f8615f2d7d094fab5dd13c6298ca.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img2" height="280px" width="300px" src="https://i.pinimg.com/236x/5b/91/db/5b91db44efe257a4b91f46145d523eab.jpg" alt="">
+            </div>
+        </div>
+       </div> <br><br><br>
+
+
+       <!--  -->
+       <div style="color: white; height: 150px; background-color: rgb(241, 152, 152);" class="row">
+         <div style=" margin-left: 0px; " class="col-9">
+            <p style="margin-left: 350px; margin-top: 40px; font-size: 15px;">HURRY UP! THE OFFER IS LIMITED</p>
+            <P style="margin-left: 350px; font-weight: bolder; font-size: 30px;">Like it? Pre-Order and get a discount</P>
+         </div>
+         <div class="col-3">
+            <button style="border: 1px solid rgb(241, 152, 152);  margin-top: 50px; padding: 10px; background-color: white; color: black; border-radius: 30px; ">Learn More</button>
+         </div>
+       </div>
+
+
+       <!--  -->
+       <div style="margin-top: 120px;" class="text">
+        <p style= "text-align: center; letter-spacing: 7px; text-shadow: 1px 1px 3px ; margin: 50px;  font-size: 30px;">Why do  you have to buy headphones only for us?</p>
+        <div style="margin-left: 110px; width: 1300px;" class="row">
+        <div class="col-3">
+            <p style="font-size: 20px; "> <span style="font-weight: bolder; color: rgb(241, 152, 152); font-size: 100px;">01 </span></p>
+            <P style="position: absolute; font-weight: bolder; margin-top: -100px; ">HIGH QUALITY</P>
+            <p >Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit.</p>
+            <p style="color: rgb(212, 148, 148);">Learn More...</p>
+        </div>
+        <div class="col-3">
+            <p style="font-size: 20px; "><span style="font-weight: bolder; color: rgb(241, 152, 152); font-size: 100px;">02 </span></p>
+            <P style="position: absolute; font-weight: bolder; margin-top: -100px;">ORIGINAL DEVICES</P>
+            <p>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit.</p>
+            <p style="color: rgb(212, 148, 148);">Learn More...</p>
+        </div>
+        <div class="col-3">
+            <p style="font-size: 20px; "><span style="font-weight: bolder; color: rgb(241, 152, 152); font-size: 100px;">03</span> </p>
+            <P style="position: absolute; font-weight: bolder; margin-top: -100px;">YEAR WARRANTY</P>
+            <p>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit.</p>
+            <p style="color: rgb(212, 148, 148);">Learn More...</p>
+        </div>
+        <div class="col-3">
+            <p style="font-size: 20px; "><span style="font-weight: bolder; color: rgb(241, 152, 152); font-size: 100px;">04</span> </p>
+            <P style="position: absolute; font-weight: bolder; margin-top: -100px;">WEEK TO CHECK</P>
+            <p>Lorem ipsum dolor, sit amet <br> consectetur adipisicing elit.</p>
+            <p style="color: rgb(212, 148, 148);">Learn More...</p>
+        </div>
+       </div>
+       </div>
+
+
+       <!--  -->
+       <div  class="row mt-5 ">
+        <p style="margin-top: 90px; text-align: center; font-weight: bolder;">STILL NOT CONVINCING?</p>
+        <P style="letter-spacing: 7px; text-shadow: 1px 1px 3px ; margin-left: 70px; text-align: center; font-weight: bolder; font-size: 50px;">Visit us and see yourself!</P>
+       </div>
+
+       <iframe height="550px" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0622732494!2d-74.30932777004287!3d40.697019286161634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1720814275014!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+       <!-- footer -->
+        <div style="margin-top: 70px;" class="footer">
+            <div class="row">
+                <div class="col-4">
+                    <a href="">
+                        <img style=" margin-left: 250px;" height="90px" width="100px" src="https://i.pinimg.com/736x/cb/a7/f8/cba7f8615f2d7d094fab5dd13c6298ca.jpg" alt="">
+                    </a>
+                </div>
+                <div style="margin-top: 40px; color: rgba(0, 0, 0, 0.518);" class="col-4">
+                    @2018 All Rights Reserved Terms of Use and <br><span style="margin-left: 90px;">Privacy Policy</span>
+                </div>
+                <div style="margin-top: 40px;" class="col-4">
+                    <a style="background-color: rgb(212, 148, 148);" data-mdb-ripple-init class="btn btn-outline btn-floating  rounded-circle text-light " href="#!" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a style="background-color: rgb(212, 148, 148);" data-mdb-ripple-init class="btn btn-outline btn-floating  rounded-circle text-light" href="#!" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>     
+
+                    <a style="background-color: rgb(212, 148, 148);" data-mdb-ripple-init class="btn btn-outline btn-floating  rounded-circle text-light" href="#!" role="button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a style="background-color: rgb(212, 148, 148);" data-mdb-ripple-init class="btn btn-outline btn-floating  rounded-circle text-light" href="#!" role="button">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a style="background-color: rgb(212, 148, 148);" data-mdb-ripple-init class="btn btn-outline btn-floating  rounded-circle text-light" href="#!" role="button">
+                        <i class="fab fa-google"></i>
+                    </a>
+
+                    
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+        /* movement */
+        .banner .head{
+            flex: 1 1 300px;
+        }
+        .banner .head .head2{
+            width: 1900px;
+            animation: c 3s linear infinite;
+        }
+        @keyframes c{
+            0%, 100%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(30px);
+            }
+        }
+
+
+.banner button:hover{
+    background-color: rgb(212, 148, 148);
+    color: white;
+}
+
+.row1 .col-3{
+    flex: 1 1 300px;
+}
+.row1 .col-3 .img2{
+    width: 300px;
+    animation: c 3s linear infinite;
+}
+.img:hover{
+    transform: scale(0.8);
+    border-radius: 5%;
+    box-shadow: 1px 1px 50px ;
+
+}
+.card button:hover{
+    transform: scale(0.8);
+    border-radius: 5%;
+    box-shadow: 1px 1px 50px ;
+}
+
+.row1 .row .col-3:hover{
+    opacity: 0.5 ;
+    
+    
+}
